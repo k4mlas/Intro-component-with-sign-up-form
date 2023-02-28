@@ -12,6 +12,62 @@ body {
 	background-image: url(../images/bg-intro-mobile.png);
 }
 
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: 'Poppins', sans-serif;
+	&__content {
+		width: 100%;
+		&__title {
+			padding: 2rem;
+			text-align: center;
+			font-weight: 700;
+			color: $white;
+		}
+		&__text {
+			margin-top: 2rem;
+			padding: 2rem;
+			text-align: center;
+			font-size: 1rem;
+			font-weight: 400;
+			color: $white;
+		}
+	}
+	&__contentTwo {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		&__subtitle {
+			margin-top: 2rem;
+			padding: 2rem;
+			width: 80%;
+			background-color: $blue;
+			&__text {
+				text-align: center;
+				color: $white;
+			}
+		}
+		&__form {
+			width: 80%;
+			margin-top: 2rem;
+			padding: 2rem;
+			background-color: $white;
+
+			&__input {
+				width: 100%;
+				&__data {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
 .attribution {
 	font-size: 11px;
 	text-align: center;

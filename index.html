@@ -9,43 +9,48 @@
   <meta name="description" content="New component">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
-
-
 </head>
 
 <body>
   <main>
     <div class="card">
       <div class="card__content">
-        <h1 class="card__title">Learn to code by watching others</h1>
-
-        <p class="card__text">See how experienced developers solve problems in real-time. Watching scripted tutorials is
+        <h1 class="card__content__title">Learn to code by watching others</h1>
+        <p class="card__content__text">See how experienced developers solve problems in real-time. Watching scripted
+          tutorials is
           great,
           but understanding how developers think is invaluable.</p>
       </div>
       <div class="card__contentTwo">
-        <div class="card__subtitle">
-          <p class="card__subtitle__text">Try it free 7 days then $20/mo. thereafter</p>
+        <div class="card__contentTwo__subtitle">
+          <p class="card__contentTwo__subtitle__text">Try it free 7 days <span>$20/mo. thereafter</span></p>
         </div>
-        <div class="card__form">
+        <div class="card__contentTwo__form">
+          <div class="card__contentYwo__form__input">
+            <input class="card__contentTwo__form__input__data" type="text" placeholder="First Name">
+            <p class="card__contentTwo__form__input__error">First Name cannot be empty</p>
+          </div>
+          <div class="card__contentYwo__form__input">
+            <input class="card__contentTwo__form__input__data" type="text" placeholder="Last Name">
+            <p class="card__contentTwo__form__input__error">Last Name cannot be empty</p>
+          </div>
+          <div class="card__contentYwo__form__input">
+            <input class="card__contentTwo__form__input__data" type="email" placeholder="Email Address">
+            <p class="card__contentTwo__form__input__error">Looks like this is not an email</p>
+          </div>
+          <div class="card__contentYwo__form__input">
+            <input class="card__contentTwo__form__input__data" type="password" placeholder="Password">
+            <p class="card__contentTwo__form__input__error">Password cannot be empty</p>
+          </div>
 
-          <p class="card__form__text">First Name</p>
-          <input class="card__form__input" type="text">
 
-          <p class="card__form__text">Last Name</p>
-          <input class="card__form__input" type="text">
-
-          <p class="card__form__text">Email Address</p>
-          <input class="card__form__input" type="email">
-
-          <p class="card__form__text">Password</p>
-          <input class="card__form__input" type="password">
-
-
-          <button class="card__form__btn">Claim your free trial</button>
-
-          <p class="card__form__paragraph">By clicking the button, you are agreeing to our Terms and Services</p>
+          <button class="card__contentTwo__form__btn">Claim your free trial</button>
+          <p class="card__contentTwo__form__paragraph">By clicking the button, you are agreeing to our <span>Terms and
+              Services</span></p>
         </div>
       </div>
     </div>
