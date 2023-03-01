@@ -17,7 +17,6 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
 	font-family: 'Poppins', sans-serif;
 	&__content {
 		width: 100%;
@@ -55,7 +54,6 @@ body {
 			}
 		}
 		&__form {
-			position: relative;
 			width: 80%;
 			margin-top: 2rem;
 			padding: 2rem;
@@ -63,8 +61,8 @@ body {
 			border-radius: 0.725rem;
 
 			&__input {
-				width: 100%;
-				background-color: red;
+				position: relative;
+
 				&__data {
 					width: 100%;
 					height: 3rem;
@@ -83,19 +81,45 @@ body {
 				}
 				&__icon {
 					position: absolute;
-					top: 7px;
-					
+					top: 20%;
+					right: 5%;
+				}
+			}
+			&__btn {
+				width: 100%;
+				height: 3rem;
+				margin-top: 2rem;
+				border: none;
+				font-weight: 700;
+				background-color: $green;
+				border-radius: 0.725rem;
+				text-transform: uppercase;
+				color: $white;
+				transition: background-color 0.3s;
+				cursor: pointer;
+				&:hover {
+					background-color: $grayishBlue;
+				}
+			}
+			&__paragraph {
+				margin-top: 2rem;
+				font-size: 0.9rem;
+				text-align: center;
+				color: $grayishBlue;
+				span {
+					color: $red;
+					font-weight: 600;
 				}
 			}
 		}
 	}
 }
 
-// .attribution {
-// 	margin-top: 3rem;
-// 	font-size: 11px;
-// 	text-align: center;
-// 	a {
-// 		color: hsl(228, 45%, 44%);
-// 	}
-// }
+.attribution {
+	margin-top: 3rem;
+	font-size: 11px;
+	text-align: center;
+	a {
+		color: hsl(228, 45%, 44%);
+	}
+}
