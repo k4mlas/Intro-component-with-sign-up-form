@@ -1,0 +1,23 @@
+@media (min-width: 992px) {
+	body {
+		background-image: url(../images/bg-intro-desktop.png);
+	}
+
+	.card {
+		flex-direction: row;
+		height: 100vh;
+		&__content {
+			margin-left: 2rem;
+			&__title {
+				padding: 0;
+				text-align: left;
+				font-size: 3rem;
+			}
+			&__text {
+				margin-top: 0;
+				padding: 0;
+				text-align: left;
+			}
+		}
+	}
+}
