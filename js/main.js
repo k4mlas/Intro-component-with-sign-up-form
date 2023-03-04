@@ -7,9 +7,8 @@ const reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 const checkEmail = () => {
 	if (email.value.match(reg)) {
 		emailErrorText.innerHTML = "<br>"
-		console.log('ok');
+		
 	} else {
-		console.log('nie jest ok');
 		emailErrorText.innerHTML = "Looks like this is not an email"
 	}
 };
