@@ -25,6 +25,7 @@ const checkName = () => {
 	if (name.value != '') {
 		nameErrorText.innerHTML = '<br>';
 		nameErrorIcon.style.display = 'none';
+		name.value = '';
 	} else {
 		nameErrorText.innerHTML = 'First Name cannot be empty';
 		nameErrorIcon.style.display = 'block';
@@ -35,6 +36,7 @@ const checkLastName = () => {
 	if (lastName.value != '') {
 		lastNameErrorText.innerHTML = '<br>';
 		lastNameErrorIcon.style.display = 'none';
+		lastName.value = '';
 	} else {
 		lastNameErrorText.innerHTML = 'Last Name cannot be empty';
 		lastNameErrorIcon.style.display = 'block';
@@ -70,7 +72,7 @@ const checkPass = () => {
 		console.log('hasło jest ok');
 	} else {
 		passErrorText.innerHTML =
-			'The password should contain uppercase and lowercase letters, numbers and special characters';
+			'Uppercase and lowercase letters, numbers and special characters';
 		passErrorIcon.style.display = 'block';
 		console.log('Za słabe hasło');
 	}
