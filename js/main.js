@@ -13,7 +13,13 @@ const emailErrorText = document.querySelector('#emailErrorText');
 const emailErrorIcon = document.querySelector('#emailErrorIcon');
 const reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
-
+const pass = document.querySelector('#pass');
+const passErrorIcon = document.querySelector('#passErrorIcon');
+const passErrorText = document.querySelector('#passErrorText');
+const letters = /[a-z]/i;
+const numbers = /[0-9]/;
+const special = /[!@#$%^&*()?]/;
+const minValue = 10;
 
 const checkName = () => {
 	if (name.value != '') {
@@ -46,7 +52,28 @@ const checkEmail = () => {
 	}
 };
 
+const checkPass = () => {
+	if (pass.value == '') {
+		passErrorText.innerHTML = 'Password cannot be empty';
+		passErrorIcon.style.display = 'block';
+		console.log('Wpisz hasło');
+	} else if (
+		pass.value != '' &&
+		pass.value.length > minValue &&
+		pass.value.match(letters) &&
+		pass.value.match(numbers) &&
+		pass.value.match(special)
+	) {
+		passErrorText.innerHTML = '<br>';
+		passErrorIcon.style.display = 'none';
+		pass.value = '';
+		console.log('hasło jest ok');
+	} else {
+		passErrorText.innerHTML =
+			'The password should contain uppercase and lowercase letters, numbers and special characters';
+		passErrorIcon.style.display = 'block';
+		console.log('Za słabe hasło');
+	}
+};
 
-
-
-btn.addEventListener('click', checkLastName);
+btn.addEventListener('click', checkPass);
