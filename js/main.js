@@ -76,4 +76,11 @@ const checkPass = () => {
 	}
 };
 
-btn.addEventListener('click', checkPass);
+const startF = () => {
+	checkName();
+	checkLastName();
+	checkEmail();
+	checkPass();
+};
+
+btn.addEventListener('click', startF);
