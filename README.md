@@ -1,6 +1,6 @@
 # Frontend Mentor - Intro component with sign up form
 
-https://k4mlas.github.io/Intro-component-with-sign-up-form/
+ I invite you to check my project by clicking on the link below: https://k4mlas.github.io/Intro-component-with-sign-up-form/
 
 ![Design preview for the Intro component with sign up form coding challenge](./design/desktop-preview.jpg)
 
